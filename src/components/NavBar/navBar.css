@@ -1,0 +1,140 @@
+.logo-text{
+    color: rgb(97, 218, 251);
+}
+nav a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+a:hover{
+    color: #61dafb;
+}
+
+nav{
+    text-decoration: none;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color:#20232a;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+  }
+  img{
+      padding-right: 10px;
+  }
+  .nav-left{
+    text-decoration: none;
+    display: flex;
+    flex-grow: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+  nav ul{ 
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: white;
+    align-items: center;
+    padding: 8px 50px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin:10px;
+  }
+  
+  nav ul li{
+    margin: 0 15px;
+  }
+  nav ul li:hover{
+      color: #61dafb;
+  }
+  .menu-icon{
+    display: none;
+  }
+  .nav-right{
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  svg{
+      fill: white;
+  }
+  svg:hover{
+      fill: #61dafb;
+  }
+  .search-container{
+      
+      margin: 20px;
+  }
+  .input-with-logo{
+      border: 0;
+      background-color: transparent;
+  }
+  .input-with-logo:focus{
+      outline-color: none;
+      color: white;
+  }
+  .fa-search{
+      margin-right: 10px;
+      color: white;
+  }
+  .fa-external-link-square-alt{
+      color: #aaa;
+      font-size: 10px;
+  }
+
+  @media screen and (max-width: 960px) {
+    nav{
+        height: 70px;
+        width: 100%;
+      }
+      .nav-right{
+          display: none;
+      }
+      .nav-menu {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-menu.active {
+        list-style: none;
+        background: #20232a;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 2;
+        font-size: 20px;
+    }
+    nav ul li{
+        margin: 20px;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+      
+    }
+    .fa-bars{
+        color: #fff;
+        font-size: 2rem;
+    }
+  
+  }
